@@ -2,6 +2,10 @@
 
 https://school.programmers.co.kr/learn/courses/30/lessons/150369
 
+## 유형
+
+그리디
+
 ## 풀이법
 
 n이 10,000이라서 탐색은 힘들다고 판단.
@@ -12,5 +16,5 @@ deliveries, pickups 배열을 먼 거리부터 처리(배달,수거)했다.
 
 각각 보면서 둘 중에 max 거리까지 찍고 돌아와야 함.
 
-## 메모리 / 수행시간
+## 메모리 / 수행시간 / 코드길이
 
