@@ -54,8 +54,8 @@ public class BOJ19238 {
     }
 
     private static boolean transferSuccess() {
-        if (!bfsToCustomer()) return false;
-        if (!bfsToDest()) return false;
+//        if (!bfsToCustomer()) return false;
+//        if (!bfsToDest()) return false;
         return true;
     }
 
@@ -87,6 +87,8 @@ public class BOJ19238 {
                 }
             }
         }
+
+        return false;
     }
 
     private static boolean validCoordinate(int i, int j) {
