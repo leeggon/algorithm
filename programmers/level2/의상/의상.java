@@ -1,4 +1,4 @@
-package programmers.lv2.의상;
+package programmers.level2.의상;
 
 import java.util.*;
 
