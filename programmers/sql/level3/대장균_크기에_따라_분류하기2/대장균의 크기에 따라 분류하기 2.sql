@@ -1,0 +1,13 @@
+SELECT ED.ID AS ID,
+          CASE
+          WHEN ED.PERRANK <= 0.25 THEN 'CRITICAL'
+          WHEN ED.PERRANK <= 0.5 THEN 'HIGH'
+          WHEN ED.PERRANK <= 0.75 THEN 'MEDIUM'
+          ELSE 'LOW'
+          END
+          AS COLONY_NAME
+    FROM (
+            SELECT ID, PERCENT_RANK() OVER (ORDER BY SIZE_OF_COLONY DESC) AS PERRANK
+            FROM ECOLI_DATA
+         ) AS ED
+ORDER BY ID;
