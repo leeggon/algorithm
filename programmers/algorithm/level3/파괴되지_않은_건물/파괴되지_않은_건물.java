@@ -1,6 +1,6 @@
 package programmers.algorithm.level3.파괴되지_않은_건물;
 
-class Solution {
+class 파괴되지_않은_건물 {
     public int solution(int[][] board, int[][] skill) {
         int answer = 0;
 
